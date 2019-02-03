@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="130dp"
+    android:layout_height="110dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/edittext_bg"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <FrameLayout
+android:layout_gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <ImageView
+android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:id="@+id/artistImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+    <common.Bold_TextView
+        android:id="@+id/name"
+        android:layout_gravity="center"
+        android:text="name"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+</LinearLayout>

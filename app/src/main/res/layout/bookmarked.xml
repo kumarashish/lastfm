@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            android:layout_marginLeft="-20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <common.Bold_TextView
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:text="BookMarks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/bookmarklist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        <common.Bold_TextView
+            android:id="@+id/noResult"
+android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:text="No Bookmarks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>
